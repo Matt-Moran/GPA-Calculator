@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 style="text-align: center">GPA Calculator</h1>
+    <div class="column">
+      <table>
+        <tr>
+          <th>Letter Grade</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td contenteditable="" id="A">4.00</td>
+        </tr>
+        <tr>
+          <td>A-</td>
+          <td contenteditable="" id="A-">3.67</td>
+        </tr>
+        <tr>
+          <td>B+</td>
+          <td contenteditable="" id="B+">3.33</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td contenteditable="" id="B">3.00</td>
+        </tr>
+        <tr>
+          <td>B-</td>
+          <td contenteditable="" id="B-">2.67</td>
+        </tr>
+        <tr>
+          <td>C+</td>
+          <td contenteditable="" id="C+">2.33</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td contenteditable="" id="C">2.00</td>
+        </tr>
+        <tr>
+          <td>C-</td>
+          <td contenteditable="" id="C-">1.67</td>
+        </tr>
+        <tr>
+          <td>D+</td>
+          <td contenteditable="" id="D+">1.33</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td contenteditable="" id="D">1.00</td>
+        </tr>
+        <tr>
+          <td>D-</td>
+          <td contenteditable="" id="D-">0.67</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td contenteditable="" id="F">0.00</td>
+        </tr>
+        <caption class="caption">
+          (Click on a value to edit)
+        </caption>
+      </table>
+    </div>
+    <div class="column">
+      <br />
+      <form id="classgrades">
+        <label for="grade1" id="grade1label">Class 1 Grade:</label>
+        <select name="grade1" id="grade1">
+          <option value="A" id="gradeLetter1">A</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="B-">B-</option>
+          <option value="C+">C+</option>
+          <option value="C">C</option>
+          <option value="C-">C-</option>
+          <option value="D+">D+</option>
+          <option value="D">D</option>
+          <option value="D-">D-</option>
+          <option value="F">F</option>
+        </select>
+        <label for="weight1" id="weight1"> Weight:</label>
+        <input type="number" id="weightNum1" />
+      </form>
+      <br />
+      <button onclick="addClass()" class="button">Add Class</button><br />
+      <button onclick="removeClass()" class="button">Remove Class</button><br />
+      <button onclick="calculateGPA()" class="button">Submit</button>
+      <p id="output">GPA: ____</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

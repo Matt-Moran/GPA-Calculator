@@ -1,0 +1,46 @@
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    background-color: beige;
+    padding: 10px 100px;
+    font-size: 20px;
+  }
+  .button {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #20c1bd;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+  }
+  .button:hover {
+    background-color: grey;
+  }
+  .column {
+    float: left;
+    width: 50%;
+  }
+  .caption {
+    caption-side: bottom;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  th {
+    padding: 5px 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #20c1bd;
+  }
+  td:nth-child(even):hover {
+    background-color: grey;
+  }
+  input[type="number"] {
+    width: 40px;
+  }
